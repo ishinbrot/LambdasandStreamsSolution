@@ -47,6 +47,9 @@ private ArrayList<Student> studentList = new ArrayList<Student>();
     public void setStudentList(ArrayList<Student> studentList) {
         this.studentList = studentList;
     }
+    public void addStudent(Student student) {
+        this.studentList.add(student);
+    }
     
 
     @Override
@@ -55,7 +58,7 @@ private ArrayList<Student> studentList = new ArrayList<Student>();
             " lastName='" + getLastName() + "'" +
             ", firstName='" + getFirstName() + "'" +
             ", classTeaching='" + className + "'" +
-            ", studentList='" + getStudentList() + "'" +
+            ", studentList='" + this.studentList.toString() + "'" +
             "}";
     }
 

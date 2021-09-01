@@ -43,9 +43,10 @@ public final class App {
         // filter
 
         determineStudentsinEachClass(Utility.studentList, Utility.professorList);
+
+        
     }
     // use Java streams to inform each professor who is taking their specific class, and how many students are in each class.
-    
 
     private static void determineStudentsinEachClass(ArrayList<Student> studentList, ArrayList<Professor> professorList) {
         // you know each professor teaches 1 class. We can do a for each for each class
@@ -54,11 +55,13 @@ public final class App {
             System.out.print("Professor " + p.getFirstName() + " " + p.getLastName() + " has the following students: ");
             Stream<Student> studentsInClass = studentList.stream().filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
             studentsInClass.forEach(s-> { 
+                p.addStudent(s);
                 System.out.println(s.getFirstName() + " " + s.getLastName());
             });
             System.out.print("\n");
             
         });
+        System.out.println(professorList.get(0));
     }
     /**
      * This method will print out all of the Jon's that are students use Java 8
@@ -91,14 +94,7 @@ public final class App {
 
         String studentString = studentFilter.map(Object::toString).collect(Collectors.joining("\n "));
         return "The following students are taking Maven 101 " + studentString;
-    }
-
-    /**
-     * This method creates an array of 5 students
-     * 
-     * @return
-     */
-   
+    } 
 
 
 }
