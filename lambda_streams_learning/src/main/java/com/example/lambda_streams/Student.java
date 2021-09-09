@@ -6,7 +6,8 @@ public class Student implements Person {
 
     private String lastName;
     private String firstName;
-    private int GPA = 0;
+    private long GPA = 0;
+    ArrayList<Professor> professorList = new ArrayList<>();
 
     private ArrayList<String> classListName = new ArrayList<String>();
 
@@ -57,14 +58,24 @@ public class Student implements Person {
         this.classListName.add(className);
     }
 
-    public int getGPA() {
+    public long getGPA() {
         return this.GPA;
     }
 
-    public void setGPA(int GPA) {
+    public void setGPA(long GPA) {
         this.GPA = GPA;
     }
 
+    public ArrayList<Professor> getProfessorList() {
+        return this.professorList;
+    }
+
+    public void setProfessorList(ArrayList<Professor> professorList) {
+        this.professorList = professorList;
+    }
+    public void addProfessor(Professor professor) {
+        this.professorList.add(professor);
+    }
     
     @Override
     public String toString() {
@@ -72,6 +83,7 @@ public class Student implements Person {
             " lastName='" + getLastName() + "'" +
             ", firstName='" + getFirstName() + "'" +
             ", classList='" + getClassesAsString() + "'" +
+            ", professorList='" + this.professorList.toString() + "'" +
             "}";
     }
     

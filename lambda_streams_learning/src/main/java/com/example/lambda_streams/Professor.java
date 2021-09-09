@@ -7,8 +7,7 @@ public class Professor implements Person {
 private String lastName;
 private String firstName;
 private String className = new String();
-private ArrayList<Student> studentList = new ArrayList<Student>();
-
+private int grade = 0;
     public Professor(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,15 +39,12 @@ private ArrayList<Student> studentList = new ArrayList<Student>();
     }
 
 
-    public ArrayList<Student> getStudentList() {
-        return this.studentList;
+    public int getGrade() {
+        return this.grade;
     }
 
-    public void setStudentList(ArrayList<Student> studentList) {
-        this.studentList = studentList;
-    }
-    public void addStudent(Student student) {
-        this.studentList.add(student);
+    public void setGrade(int grade) {
+        this.grade = grade;
     }
     
 
@@ -58,7 +54,6 @@ private ArrayList<Student> studentList = new ArrayList<Student>();
             " lastName='" + getLastName() + "'" +
             ", firstName='" + getFirstName() + "'" +
             ", classTeaching='" + className + "'" +
-            ", studentList='" + this.studentList.toString() + "'" +
             "}";
     }
 

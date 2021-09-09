@@ -1,63 +1,15 @@
-Outline
+Part 2:
+Now that you have identified which professor corresponds is teaching which students using java streams, it is time to add lambda's.
+Every professor contains a list of students, along with their respective class list
+
+Every class the professor teaches is graded on either a pass/fail, but affects the students GPA differently.
+Each professor has a specifc grade in their class. That is the grade they will automatically give every student upon completing.
+Use the grades to update each students new GPA. Utilize Java Streams and Lambda functions.
 
 
+Every professor is assigned a grade, and has given each student their respective grade. All of the students have had their total number of grade points added up.
+They do not yet have their GPA. In order to compute their GPA you need to divide their grade by the number of classes they are taking
 
-Practicing Streams
+After you are done sort all of the students by their first name and print out the output using java streams in one line
 
-
-
-
-Person interface
-
-Student 
-
-Professor
-
-
-
-
-There is a Person interface, followed by a Professor and Student class with similar attributes
-
-There is a main class class App.java that creates a list Students and Professors. 
-Students have a GPA attribute that will be used in a later phase for this technical challenge.
-
-
-We would like to filter on these Students to extract a subset of them.
-
-We want to let each professor know who is taking each class.
-
-Your output should look similar to the below
-
-Answer key:
-Professor Jeffrey Popyack has the following students: Jon Goldstein
-Pat Salemo
-Jenna Pascal
-Tim Smith
-Dwight Schrute
-Mose Schrute
-Pam Scott
-Jim Halpert
-
-Professor Jack Dawson has the following students: Tom Brown
-Jon Goldstein
-Jack Ryan
-Jenna Goldstein
-Michael Scott
-Pete Halpert
-Tony Brown
-
-Professor Keith Goldman has the following students: Jon Goldstein
-Tim Scott
-Dwight Schrute
-Mose Schrute
-
-Professor Timothy Donahue has the following students: Tom Brown
-Robert DeNiro
-Jenna Goldstein
-Pam Scott
-Jim Halpert
-
-Professor Michael Conforto has the following students: Pat Salemo
-Ty Timothy
-Mose Schrute
-Pam Halpert
+Next
