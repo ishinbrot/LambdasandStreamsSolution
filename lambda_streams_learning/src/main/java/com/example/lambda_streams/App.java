@@ -22,10 +22,10 @@ public final class App {
         System.out.print("\n");
         
     }
-    // use Java streams to inform each professor who is taking their specific class, and how many students are in each class.
+    // use Java streams to inform each professor who is taking their specific class, and how which student is in each class
 
     private static ArrayList<Student> determineStudentsinEachClass(ArrayList<Student> studentList, ArrayList<Professor> professorList) {
-        // you know each professor teaches 1 class. We can do a for each for each class
+        // Populate the following method using Java streams to complete the answer
 
         professorList.forEach(p-> {
             System.out.print("Professor " + p.getFirstName() + " " + p.getLastName() + " has the following students: ");
