@@ -28,25 +28,11 @@ public final class App {
     private static ArrayList<Student> determineStudentsinEachClass(ArrayList<Student> studentList, ArrayList<Professor> professorList) {
         // Populate the following method using Java streams to complete the answer
 
-        professorList.forEach(p-> {
-            System.out.print("Professor " + p.getFirstName() + " " + p.getLastName() + " has the following students: ");
-            Stream<Student> studentsInClass = studentList.stream().sorted(Comparator.comparing(Student::getLastName)).filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
-            studentsInClass.forEach(s-> { 
-                s.addProfessor(p);
-                long grade = p.getGrade() + s.getGPA();
-                s.setGPA(grade);
-                System.out.println(s.getFirstName() + " " + s.getLastName() + " grade " + s.getGPA());
-            });
-            System.out.print("\n");
-            
-        });
         return studentList;
     }
 
     private static List<Student> computeGPA(List<Student> studentList) {
 
-
-          studentList.forEach(s -> s.setGPA(s.getGPA() / s.getProfessorList().stream().count()));
 
           return studentList;
     }
