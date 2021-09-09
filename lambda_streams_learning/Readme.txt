@@ -1,5 +1,5 @@
 Part 2:
-Now that you have identified which professor corresponds is teaching which students using java streams, it is time to add lambda's.
+Now that you have identified which professor corresponds is teaching which students using java streams, it is time to add lambda's and sort each class by a students last name.
 Every professor contains a list of students, along with their respective class list
 
 Every class the professor teaches is graded on either a pass/fail, but affects the students GPA differently.
