@@ -11,9 +11,13 @@ Every professor is assigned a grade, and has given each student their respective
 They do not yet have their GPA. In order to compute their GPA you need to divide their grade by the number of classes they are taking
 
 After you are done sort all of the students by their first name and print out the output using java streams in one line
+Use the updated Java 8 interface for sorting the list using a comparator lambda function to return a new stream.
+Please use collect afterwards to construct a new list from the sorted list
 
 You can find information related to java streams and lambdas at the following link:
 
 https://stackify.com/streams-guide-java-8/
 
 https://www.geeksforgeeks.org/lambda-expressions-java-8/
+
+Information related to java sorting https://howtodoinjava.com/java8/stream-sorted-method/
