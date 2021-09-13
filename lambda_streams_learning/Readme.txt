@@ -12,4 +12,8 @@ They do not yet have their GPA. In order to compute their GPA you need to divide
 
 After you are done sort all of the students by their first name and print out the output using java streams in one line
 
-Next
+You can find information related to java streams and lambdas at the following link:
+
+https://stackify.com/streams-guide-java-8/
+
+https://www.geeksforgeeks.org/lambda-expressions-java-8/
