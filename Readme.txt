@@ -1,28 +1,11 @@
-Outline
-
-
-
-Practicing Streams
-
-
-
-
-Person interface
-
-Student 
-
-Professor
-
-
-
 
 There is a Person interface, followed by a Professor and Student class with similar attributes
 
 There is a main class class App.java that creates a list Students and Professors. 
 Students have a GPA attribute that will be used in a later phase for this technical challenge.
 
-
-We would like to filter on these Students to extract a subset of them.
+Intro:
+We would like to filter on Students to print out each professor followed by a list of their students.
 
 We want to let each professor know who is taking each class.
 

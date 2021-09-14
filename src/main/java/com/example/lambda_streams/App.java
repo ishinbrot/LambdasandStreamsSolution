@@ -1,8 +1,6 @@
 package com.example.lambda_streams;
 
 import java.util.ArrayList;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Hello world!
@@ -16,8 +14,8 @@ public final class App {
 
         
     }
-    // use Java streams to inform each professor who is taking their specific class, and how many students are in each class.
-
+    // use the Java 8 Streams API to inform each professor who is taking their specific class, and how many students are in each class.
+    
     private static void determineStudentsinEachClass(ArrayList<Student> studentList, ArrayList<Professor> professorList) {
     }
 
