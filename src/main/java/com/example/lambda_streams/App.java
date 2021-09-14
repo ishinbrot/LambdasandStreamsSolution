@@ -57,10 +57,12 @@ public final class App {
         });
         return studentList;
     }
-
+/**
+ * This function calculates each students GPA by computing their grade in the class by the amount of professors in each class
+ * @param studentList
+ * @return
+ */
     private static List<Student> computeGPA(List<Student> studentList) {
-
-
           studentList.forEach(s -> s.setGPA(s.getGPA() / s.getProfessorList().stream().count()));
 
           return studentList;
