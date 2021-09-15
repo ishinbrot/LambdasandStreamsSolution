@@ -19,7 +19,7 @@
 1. Check out the starter code for part one:
 
     ```bash
-    git checkout part1
+    git checkout part2
     ```
 
 1. Create a new branch for your development work:
@@ -40,7 +40,7 @@ are ready to open a pull request for submission.
 ## Submission
 
 1. Navigate to your GitHub repository
-1. Open a pull request from your working branch to the starting branch (`develop/part1`&rarr;`part1`).
+1. Open a pull request from your working branch to the starting branch (`develop/part2`&rarr;`part2`).
 
 > Be sure to assign a reviewer so they will receive a notification that your solution is ready for review.
 >
@@ -103,6 +103,6 @@ Ty Timothy grade 5<br/>
 
 You may wish to consult the following resources for useful information on utilizing Java Streams and Lambdas
 
--[Java Streams](https://stackify.com/streams-guide-java-8/)
--[Lambda Expressions](https://www.geeksforgeeks.org/lambda-expressions-java-8/)
--[Information related to java sorting](https://howtodoinjava.com/java8/stream-sorted-method/)
+- [Java Streams](https://stackify.com/streams-guide-java-8/)
+- [Lambda Expressions](https://www.geeksforgeeks.org/lambda-expressions-java-8/)
+- [Information related to java sorting](https://howtodoinjava.com/java8/stream-sorted-method/)
