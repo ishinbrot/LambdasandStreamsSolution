@@ -77,7 +77,7 @@ Sorting the array can be done on one line using Java Stream
 You can find information related to java streams and lambdas at the following link:
 
 ## Answer Key:
-The output of the application should look like below:
+The output of the application should look like below: <br/>
 Tom Brown grade 3 <br/>
 Tony Brown grade 4 <br/>
 Robert DeNiro grade 3 <br/>
