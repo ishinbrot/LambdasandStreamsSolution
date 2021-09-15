@@ -1,3 +1,5 @@
+![CapTech Banner](https://github.com/captechconsulting/springboot-techchallenge/blob/part0/src/main/resources/images/CaptechLogo.png)
+
 # Part 2: Java and Lambda tech challenge
 
 
