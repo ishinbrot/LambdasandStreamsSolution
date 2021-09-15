@@ -5,11 +5,12 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Overview] Intro to the Java Stream API (#Using-the-Java-Stream-filter-API)
 - [Parts](#parts)
 - [Working branch](#working-branch)
 - [Submission](#submission)
 - [Running the Application](#running-the-application)
+- [Overview: Using the Java Stream API](#Using-the-Java-Stream-filter-API)
+- [Answer Key](#answer-key)
 - [Recommended Resources](#recommended-resources)
 
 
