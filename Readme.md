@@ -85,7 +85,7 @@ can be shortened to studentList.forEach(student-> {});
 ## Answer key:
 Your output should appear as follows:
 
-Professor Jeffrey Popyack has the following students: Jon Goldstein &nbsp;
+Professor Jeffrey Popyack has the following students: Jon Goldstein  **Enter**
 Pat Salemo&nbsp;
 Jenna Pascal&nbsp;
 Tim Smith&nbsp;
@@ -122,4 +122,4 @@ Pam Halpert&nbsp;
 
 You may wish to consult the following resources for useful information on utilizing Java Streams and Lambdas
 
- - [ Streams-in-Java 8] https://stackify.com/streams-guide-java-8/
+ - [Streams-in-Java 8](https://stackify.com/streams-guide-java-8/)
