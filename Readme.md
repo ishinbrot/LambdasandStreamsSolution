@@ -85,38 +85,38 @@ can be shortened to studentList.forEach(student-> {});
 ## Answer key:
 Your output should appear as follows:
 
-Professor Jeffrey Popyack has the following students: Jon Goldstein
-Pat Salemo
-Jenna Pascal
-Tim Smith
-Dwight Schrute
-Mose Schrute
-Pam Scott
-Jim Halpert
+Professor Jeffrey Popyack has the following students: Jon Goldstein &nbsp;
+Pat Salemo&nbsp;
+Jenna Pascal&nbsp;
+Tim Smith&nbsp;
+Dwight Schrute&nbsp;
+Mose Schrute&nbsp;
+Pam Scott&nbsp;
+Jim Halpert&nbsp;
 
-Professor Jack Dawson has the following students: Tom Brown
-Jon Goldstein
-Jack Ryan
-Jenna Goldstein
-Michael Scott
-Pete Halpert
-Tony Brown
+Professor Jack Dawson has the following students: Tom Brown&nbsp;
+Jon Goldstein&nbsp;
+Jack Ryan&nbsp;
+Jenna Goldstein&nbsp;
+Michael Scott&nbsp;
+Pete Halpert&nbsp;
+Tony Brown&nbsp;
 
-Professor Keith Goldman has the following students: Jon Goldstein
-Tim Scott
-Dwight Schrute
-Mose Schrute
+Professor Keith Goldman has the following students: Jon Goldstein&nbsp;
+Tim Scott&nbsp;
+Dwight Schrute&nbsp;
+Mose Schrute&nbsp;
 
-Professor Timothy Donahue has the following students: Tom Brown
-Robert DeNiro
-Jenna Goldstein
-Pam Scott
-Jim Halpert
+Professor Timothy Donahue has the following students: Tom Brown&nbsp;
+Robert DeNiro&nbsp;
+Jenna Goldstein&nbsp;
+Pam Scott&nbsp;
+Jim Halpert&nbsp;
 
-Professor Michael Conforto has the following students: Pat Salemo
-Ty Timothy
-Mose Schrute
-Pam Halpert
+Professor Michael Conforto has the following students: Pat Salemo&nbsp;
+Ty Timothy&nbsp;
+Mose Schrute&nbsp;
+Pam Halpert&nbsp;
 
 ## Recommended Resources
 
