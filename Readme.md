@@ -4,6 +4,7 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [Parts](#parts)
 - [Working branch](#working-branch)
 - [Submission](#submission)
 - [Running the Application](#running-the-application)
@@ -11,6 +12,15 @@
 - [Answer Key](#answer-key)
 - [Recommended Resources](#recommended-resources)
 
+
+## Parts
+
+|                                                                                                |
+| :--------------------------------------------------------------------------------------------- |
+| [Part 0: Getting Started](../../tree/part0)                                                    |
+| [Part 1: Introduction to  Java Stream filters amd lambdas](../../tree/part1)                    |
+| [Part 2: Sort and Count Using the Java Stream API](#part-2-Java-Stream-Sort-And-Count)     |
+| [Part 3: Java Stream Grouping](../../tree/part3) |
 
 ## Working branch
 
