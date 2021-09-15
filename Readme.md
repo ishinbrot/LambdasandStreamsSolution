@@ -5,12 +5,11 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Overview: Intro to the Java Stream API (#Using-the-Java-Stream-filter-API
+- [Overview] Intro to the Java Stream API (#Using-the-Java-Stream-filter-API)
 - [Parts](#parts)
 - [Working branch](#working-branch)
 - [Submission](#submission)
 - [Running the Application](#running-the-application)
--
 - [Recommended Resources](#recommended-resources)
 
 
@@ -45,7 +44,7 @@ are ready to open a pull request for submission.
 
 > Be sure to assign a reviewer so they will receive a notification that your solution is ready for review.
 >
-> If you do not have a reviewer yet, please email [Anthony Audin](mailto:ishinbrot@captechconsulting.com)
+> If you do not have a reviewer yet, please email [Ian Shinbrot](mailto:ishinbrot@captechconsulting.com)
 
 
 ## Running the Application
@@ -56,6 +55,8 @@ To run the application, open a terminal window and execute the following command
 mvn package
 java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
 You may alternatively use the built-in compilier in your specific IDE
+```
+
 
 ## Overview: Using the Java Stream filter API
 
