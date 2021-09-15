@@ -83,6 +83,8 @@ can be shortened to studentList.forEach(student-> {});
 
 
 ## Answer key:
+Your output should appear as follows:
+
 Professor Jeffrey Popyack has the following students: Jon Goldstein
 Pat Salemo
 Jenna Pascal
