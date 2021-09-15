@@ -78,45 +78,50 @@ Utilizing Java Streams this can be done in less than 7 lines (including brackets
 Utilzing Java Streams and Lambdas we can iterate through the array more simply...
 
 ## Java Lambdas 
-writing something like (int i=0, i<studentList.size(), i++)
-can be shortened to studentList.forEach(student-> {});
+writing something like 
+```bash (int i=0, i<studentList.size(), i++) 
+```
+can be shortened to 
+```bash 
+studentList.forEach(student-> {});
+```
 
 
 ## Answer key:
 Your output should appear as follows:
 
 Professor Jeffrey Popyack has the following students: Jon Goldstein <br/>
-Pat Salemo&nbsp;
-Jenna Pascal&nbsp;
-Tim Smith&nbsp;
-Dwight Schrute&nbsp;
-Mose Schrute&nbsp;
-Pam Scott&nbsp;
-Jim Halpert&nbsp;
+Pat Salemo<br/>
+Jenna Pascal<br/>
+Tim Smith<br/>
+Dwight Schrute<br/>
+Mose Schrute<br/>
+Pam Scott<br/>
+Jim Halpert<br/>
 
-Professor Jack Dawson has the following students: Tom Brown&nbsp;
-Jon Goldstein&nbsp;
-Jack Ryan&nbsp;
-Jenna Goldstein&nbsp;
-Michael Scott&nbsp;
-Pete Halpert&nbsp;
-Tony Brown&nbsp;
+Professor Jack Dawson has the following students: Tom Brown<br/>
+Jon Goldstein<br/>
+Jack Ryan<br/>
+Jenna Goldstein<br/>
+Michael Scott<br/>
+Pete Halpert<br/>
+Tony Brown<br/>
 
-Professor Keith Goldman has the following students: Jon Goldstein&nbsp;
-Tim Scott&nbsp;
-Dwight Schrute&nbsp;
-Mose Schrute&nbsp;
+Professor Keith Goldman has the following students: Jon Goldstein<br/>
+Tim Scott<br/>
+Dwight Schrute<br/>
+Mose Schrute<br/>
 
-Professor Timothy Donahue has the following students: Tom Brown&nbsp;
-Robert DeNiro&nbsp;
-Jenna Goldstein&nbsp;
-Pam Scott&nbsp;
-Jim Halpert&nbsp;
+Professor Timothy Donahue has the following students: Tom Brown<br/>
+Robert DeNiro<br/>
+Jenna Goldstein<br/>
+Pam Scott<br/>
+Jim Halpert<br/>
 
-Professor Michael Conforto has the following students: Pat Salemo&nbsp;
-Ty Timothy&nbsp;
-Mose Schrute&nbsp;
-Pam Halpert&nbsp;
+Professor Michael Conforto has the following students: Pat Salemo<br/>
+Ty Timothy<br/>
+Mose Schrute<br/>
+Pam Halpert<br/>
 
 ## Recommended Resources
 
