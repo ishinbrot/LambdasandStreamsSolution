@@ -75,8 +75,13 @@ Java stream allows us to easily group matching elements in a list, as well as co
 For the second step of the excercise we need to print out all of the Jon's for each associated major. You will need to iterate through the new hashmap and filter out all the students with the first name Jon.
 We want to print out the students full name, and their associated major, only if they exist. If they do not exist then we will not print anything out for each respective major
 
-Print out the students with the first name Jon. Not all of the majors have students with the first name Jon
+Print out the students with the first name Jon. Not all of the majors have students with the first name Jon <br/>
 Be sure to perform all of the operations on one line.
 
+The grouping by operation should be done similar to below
+```bash
+goupingBy([AttributeHere])
+```
+## Recommended Resources
 You can reference how to use groupingBy on this page 
 https://www.baeldung.com/java-groupingby-collector
