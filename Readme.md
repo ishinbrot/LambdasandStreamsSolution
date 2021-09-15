@@ -79,7 +79,8 @@ Utilzing Java Streams and Lambdas we can iterate through the array more simply..
 
 ## Java Lambdas 
 writing something like 
-```bash (int i=0, i<studentList.size(), i++) 
+```bash 
+(int i=0, i<studentList.size(), i++) 
 ```
 can be shortened to 
 ```bash 
