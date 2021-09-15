@@ -3,7 +3,6 @@ package com.example.lambda_streams;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public final class App {
@@ -14,13 +13,11 @@ public final class App {
         List<Student> studentList = determineStudentsinEachClass(Utility.studentList, Utility.professorList);
 
         studentList = computeGPA(studentList);
-
-       studentList =  studentList.stream().sorted((o1, o2) -> o1.getFirstName().compareTo(o2.getFirstName())).collect(Collectors.toList());
-
-        studentList.forEach(s-> { 
-            System.out.println(s.getFirstName() + " " + s.getLastName() + " grade " + s.getGPA());
-        });
-        System.out.print("\n");
+    
+       studentList.forEach(s-> { 
+        System.out.println(s.getFirstName() + " " + s.getLastName() + " grade " + s.getGPA());
+    });
+       System.out.print("\n");
         
     }
     // use Java streams to inform each professor who is taking their specific class, and how which student is in each class
@@ -35,17 +32,18 @@ public final class App {
                 s.addProfessor(p);
                 long grade = p.getGrade() + s.getGPA();
                 s.setGPA(grade);
-           //     System.out.println(s.getFirstName() + " " + s.getLastName() + " grade " + s.getGPA());
             });
-     //       System.out.print("\n");
             
         });
         return studentList;
     }
 /**
- * This function calculates each students GPA by computing their grade in the class by the amount of professors in each class
+ * Calculate a students GPA here by using the stream api. the resulting solution should be one line
  * @param studentList
  * @return
  */
     private static List<Student> computeGPA(List<Student> studentList) {
-          studentList.forEach(s -> s.setGPA(s.getGPA() / s.getProfessorList().stream().count()));
+          return studentList;
+    }
+
+}

@@ -1,6 +1,5 @@
 package com.example.lambda_streams;
 
-import java.util.ArrayList;
 
 public class Professor implements Person {
 
