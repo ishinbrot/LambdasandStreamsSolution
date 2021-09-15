@@ -4,7 +4,6 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Parts](#parts)
 - [Working branch](#working-branch)
 - [Submission](#submission)
 - [Running the Application](#running-the-application)
