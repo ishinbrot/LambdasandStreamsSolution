@@ -85,7 +85,12 @@ Use the updated Java 8 interface for sorting the list using a comparator lambda 
 Please use collect afterwards to construct a new list from the sorted list<br/>
 Sorting the array can be done on one line using Java Stream
 
-You can find information related to java streams and lambdas at the following link:
+The following stream functions will be used in this excercise
+
+```bash
+.sorted()
+.collect()
+```
 
 ## Answer Key:
 The output of the application should look like below: <br/>
