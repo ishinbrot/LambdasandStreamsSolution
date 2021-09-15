@@ -28,6 +28,8 @@ public final class App {
             Stream<Student> studentsInClass = studentList.stream().filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
             studentsInClass.forEach(s-> { 
                 s.addProfessor(p);
+                long grade = p.getGrade() + s.getGPA();
+                s.setGPA(grade);
             });
             
         });
