@@ -7,6 +7,7 @@ public class Professor implements Person {
 private String lastName;
 private String firstName;
 private String className = new String();
+private int grade = 0;
 private ArrayList<Student> studentList = new ArrayList<Student>();
 
     public Professor(String firstName, String lastName) {
@@ -51,6 +52,13 @@ private ArrayList<Student> studentList = new ArrayList<Student>();
         this.studentList.add(student);
     }
     
+    public int getGrade() {
+        return this.grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
 
     @Override
     public String toString() {

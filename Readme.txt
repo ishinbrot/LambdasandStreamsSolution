@@ -7,6 +7,7 @@ Intro:
 We would like to filter on Students to print out each professor followed by a list of their students.
 
 We want to let each professor know who is taking each class.
+You will also need to claculate a students total grade points in the class (which is simply adding up the grade points for each class they are taking)
 
 You can refer to this page on how to use java stream filters
 Your output should look similar to the below

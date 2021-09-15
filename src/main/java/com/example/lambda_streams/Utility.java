@@ -110,6 +110,12 @@ public final class Utility {
         professor4.setClassTeaching(class4);
         professor5.setClassTeaching(class5);
 
+        professor1.setGrade(3);
+        professor2.setGrade(4);
+        professor3.setGrade(2);
+        professor4.setGrade(3);
+        professor5.setGrade(5);
+        
         professorList.add(professor1);
         professorList.add(professor2);
         professorList.add(professor3);
