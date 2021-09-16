@@ -1,6 +1,6 @@
 ![CapTech Banner](https://github.com/captechconsulting/springboot-techchallenge/blob/part0/src/main/resources/images/CaptechLogo.png)
 
-# Part01: Java and Lambda tech challenge
+# Part0: Java and Lambda tech challenge
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 ## Overview
 Welcome to the Lambda and Streams API TechChallenge, presented by CapTech Consulting! The challenge consists of 3 parts. <br/>
 This guide for Part 0 of the challenge provides instructions for setting up your development environment in order to begin part 1. <br/>
-Be sure to read the README for each part before beginning!
+Be sure to read the **README** for each part before beginning!
 ## Prerequisites
 
 This TechChallenge introduces Jave 8 features such as Lambda and Stream APIs that are used within a command line application. <br/>
@@ -75,7 +75,7 @@ Challenge's code repository on Github. See the following instructions to request
 
 ## Assignment Work & Submission
 
-[GitHub classroom](https://classroom.github.com/a/ivTS9er1) should already have generated a copy of the tech challenge for you to work on named `captechconsulting/lambdaandstreams-{your captech id}`. You will be working from this repository for the duration of the challenge.
+[GitHub classroom](https://classroom.github.com/a/ivTS9er1) should already have generated a copy of the tech challenge for you to work on named `captechconsulting/LambdaAndStreams-{your captech id}`. You will be working from this repository for the duration of the challenge.
 
 ### Working branch
 
@@ -113,7 +113,7 @@ are ready to open a pull request for submission.
 
 ## If you made it this far, Congratulations! You are now ready to proceed with Part 1 of the TechChallenge!
 
-[Go to Part 1: Exposing REST Web Services and Sending Requests](../../tree/part1)
+[Go to Part 1: Introduction to Java Stream filters and lambdas](../../tree/part1)
 ## Recommended Resources
 
 You may wish to consult the following resources for useful information on utilizing Java Streams and Lambdas
