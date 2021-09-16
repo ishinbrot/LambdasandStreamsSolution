@@ -2,21 +2,27 @@
 
 # Part0: Java and Lambda tech challenge
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Parts](#parts)
-- [Working branch](#working-branch)
-- [Submission](#submission)
-- [Running the Application](#running-the-application)
-- [Overview: Using the Java Stream API](#Using-the-Java-Stream-filter-API)
-- [Answer Key](#answer-key)
-- [Recommended Resources](#recommended-resources)
-
-## Overview
 Welcome to the Lambda and Streams API TechChallenge, presented by CapTech Consulting! The challenge consists of 3 parts. <br/>
 This guide for Part 0 of the challenge provides instructions for setting up your development environment in order to begin part 1. <br/>
 Be sure to read the **README** for each part before beginning!
+
+## Table of Contents
+|                                                                                                |
+| :--------------------------------------------------------------------------------------------- |
+| [Part 0: Getting Started](../../tree/part0)                                                    |
+| [Part 1: Introduction to  Java Stream filters amd lambdas](../../tree/part1)                    |
+| [Part 2: Sort and Count Using the Java Stream API](../../tree/part2)     |
+| [Part 3: Java Stream Grouping](#part-3-Java-Stream-Grouping) |
+
+
+- [Prerequisites](#Prerequisites)
+- [Development Environment Setup](#Development-Environment-Setup)
+- [Install Maven](#Install-Maven)
+- [IDEs](#IDEs)
+- [Create an Account and Setup Authentication](#Create-an-Account-and-Setup-Authentication)
+- [Assignment Work & Submission](#Assignment-Work-&-Submission)
+- [Recommended Resources](#recommended-resources)
+
 ## Prerequisites
 
 This TechChallenge introduces Jave 8 features such as Lambda and Stream APIs that are used within a command line application. <br/>
@@ -62,7 +68,7 @@ not have a preferred IDE already installed:
 - [NetBeans 8.2](https://netbeans.org/images_www/v6/download/community/8.2/)
 
 
-### Access the Lambda and Streams  TechChallenge
+### Access the Lambda and Streams TechChallenge
 
 In order to obtain the source code and instructions for each part of the TechChallenge, you will need access to the
 Challenge's code repository on Github. See the following instructions to request access and clone the repo:
@@ -76,8 +82,6 @@ Challenge's code repository on Github. See the following instructions to request
 ## Assignment Work & Submission
 
 [GitHub classroom](https://classroom.github.com/a/ivTS9er1) should already have generated a copy of the tech challenge for you to work on named `captechconsulting/LambdaAndStreams-{your captech id}`. You will be working from this repository for the duration of the challenge.
-
-### Working branch
 
 Once you have cloned your working repository to your local machine, create a branch to house work for each part.
 
