@@ -64,8 +64,9 @@ To run the application, open a terminal window and execute the following command
 ```bash
 mvn package
 java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
-You may alternatively use the built-in compilier in your specific IDE
 ```
+You may alternatively use the built-in compilier in your specific IDE
+
 
 ## Overview: Using the Java Stream filter API
 
