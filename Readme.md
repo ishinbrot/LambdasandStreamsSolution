@@ -20,8 +20,8 @@
 | :--------------------------------------------------------------------------------------------- |
 | [Part 0: Getting Started](../../tree/part0)                                                    |
 | [Part 1: Introduction to  Java Stream filters amd lambdas](../../tree/part1)                    |
-| [Part 2: Sort and Count Using the Java Stream API](#part-2-Java-Stream-Sort-And-Count)     |
-| [Part 3: Java Stream Grouping](../../tree/part3) |
+| [Part 2: Sort Using the Java Stream API](#part-2-Java-Stream-Sort-And-Count)     |
+| [Part 3: Java Stream Grouping and Count Functionality](../../tree/part3) |
 
 ## Working branch
 
@@ -81,7 +81,7 @@ Additionally, every professor assigns students the same grade per class.
 Calculate the total number of points each student has, and assign it to each student. This will be used in a later part of this challenge.
 
 ## Using Java Streams
-Normally in Java 7 and below, this will be done with a long iteration that wwould take multiple lines to write
+Normally in Java 7 and below, this will be done with a long iteration that would take multiple lines to write
 Utilizing Java Streams this can be done in less than 7 lines (including brackets).
 Utilzing Java Streams and Lambdas we can iterate through the array more simply...
 
