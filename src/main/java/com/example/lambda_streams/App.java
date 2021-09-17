@@ -1,16 +1,13 @@
 package com.example.lambda_streams;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
 public final class App {
 
     public static void main(String[] args) {
-
+        // instantiate App class to get out of static instance
         new App().helper();
-
-    
         
     }
     // use Java streams to inform each professor who is taking their specific class, and how which student is in each class
