@@ -1,6 +1,6 @@
 ![CapTech Banner](https://github.com/captechconsulting/springboot-techchallenge/blob/part0/src/main/resources/images/CaptechLogo.png)
 
-# Part0: Java and Lambda tech challenge
+# Part 0: Java and Lambda tech challenge
 
 Welcome to the Lambda and Streams API TechChallenge, presented by CapTech Consulting! The challenge consists of 3 parts. <br/>
 This guide for Part 0 of the challenge provides instructions for setting up your development environment in order to begin part 1. <br/>
