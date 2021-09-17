@@ -2,8 +2,6 @@ package com.example.lambda_streams;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -23,13 +21,11 @@ public final class App {
  
         studentList =  studentList.stream().sorted((o1, o2) -> o1.getLastName().compareTo(o2.getLastName())).collect(Collectors.toList());
      
-        System.out.print("\n");
     }
 
     private static List<Student> determineStudentsinEachClass(List<Student> studentList, List<Professor> professorList) {
         // Populate the following method using Java streams to complete the answer
         professorList.forEach(p-> {
-     //       System.out.print("Professor " + p.getFirstName() + " " + p.getLastName() + " has the following students: ");
             Stream<Student> studentsInClass = studentList.stream().
             sorted(Comparator.comparing(Student::getLastName)).
             filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
