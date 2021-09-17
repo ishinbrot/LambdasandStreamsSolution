@@ -67,7 +67,6 @@ java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
 You may alternatively use the built-in compilier in your specific IDE
 ```
 
-
 ## Overview: Using the Java Stream filter API
 
 Welcome to Part 1 of the Lambda and Streams TechChallenge!
