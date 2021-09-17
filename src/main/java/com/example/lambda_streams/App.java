@@ -9,8 +9,6 @@ public final class App {
 
     public static void main(String[] args) {
         new App().helper();
-
-
         
     }
     // use the Java 8 Streams API to inform each professor who is taking their specific class, and how many students are in each class.
