@@ -73,6 +73,9 @@ You may alternatively use the built-in compilier in your specific IDE
 Now that you have identified which professor is teaching which students using java streams, it is time to sort each class by a students last name.
 Every professor contains a list of students, along with their respective class list<br/>
 
+The first task of this exercise is to modify the forEach implementation while calculating every students grade to a java map. Keep in mind that the java stream map implementation returns
+an object instead of simply iterating through a collection
+
 Every class the professor teaches is graded on either a pass/fail, but affects the students GPA differently.<br/>
 Each professor has a specifc grade in their class. That is the grade they will automatically give every student upon completing.<br/>
 Use the grades to update each students new GPA. Utilize Java Streams and Lambda functions.
