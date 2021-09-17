@@ -10,8 +10,6 @@ public final class App {
     public static void main(String[] args) {
 
         new App().helper();
-
-
         
     }
     // use Java streams to inform each professor who is taking their specific class, and how which student is in each class
@@ -33,7 +31,6 @@ public final class App {
                 long grade = p.getGrade() + s.getGPA();
                 s.setGPA(grade);
             });
-     //       System.out.print("\n");
             
         });
         return studentList;

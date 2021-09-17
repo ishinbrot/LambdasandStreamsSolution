@@ -22,7 +22,7 @@
 | [Part 0: Getting Started](../../tree/part0)                                                    |
 | [Part 1: Introduction to  Java Stream filters amd lambdas](../../tree/part1)                    |
 | [Part 2: Sort Using the Java Stream API](#part-2-Java-Stream-Sort)     |
-| [Part 3: Java Stream Grouping](../../tree/part3) |
+| [Part 3: Java Stream Grouping and Count](../../tree/part3) |
 
 ## Working branch
 
@@ -73,7 +73,7 @@ You may alternatively use the built-in compilier in your specific IDE
 Now that you have identified which professor is teaching which students using java streams, it is time to sort each class by a students last name.
 Every professor contains a list of students, along with their respective class list<br/>
 
-The first task of this exercise is to modify the forEach implementation while calculating every students grade to a java map. Keep in mind that the java stream map implementation returns
+The first task of this exercise is to modify the forEach implementation while calculating every students grade to a utilizing the map method. Keep in mind that the java stream map implementation returns
 an object instead of simply iterating through a collection
 
 Every class the professor teaches is graded on either a pass/fail, but affects the students GPA differently.<br/>
