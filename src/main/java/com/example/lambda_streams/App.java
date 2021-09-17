@@ -1,6 +1,5 @@
 package com.example.lambda_streams;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -40,7 +39,7 @@ public final class App {
     }
     // use Java streams to inform each professor who is taking their specific class, and how which student is in each class
 
-    private static ArrayList<Student> determineStudentsinEachClass(ArrayList<Student> studentList, ArrayList<Professor> professorList) {
+    private static List<Student> determineStudentsinEachClass(List<Student> studentList, List<Professor> professorList) {
         // Populate the following method using Java streams to complete the answer
 
         professorList.forEach(p-> {
@@ -63,7 +62,7 @@ public final class App {
  * @return
  */
     private static List<Student> computeGPA(List<Student> studentList) {
-          studentList.forEach(s -> s.setGPA(s.getGPA() / s.getProfessorList().stream().count()));
+          studentList.forEach(s -> s.setGPA(s.getGPA() / s.getProfessorList().size()));
 
           return studentList;
     }
