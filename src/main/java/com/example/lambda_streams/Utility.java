@@ -1,7 +1,7 @@
 package com.example.lambda_streams;
 
+import java.util.List;
 import java.util.ArrayList;
-
 public final class Utility {
     
     private  static String class1 = "Human Computer Interaction";
@@ -10,10 +10,10 @@ public final class Utility {
     private  static String class4 = "Maven101";
     private  static String class5 = "Databases";
 
-    public static ArrayList<Student> studentList = initializeStudents();
-    public static ArrayList<Professor> professorList = initializeProfessors();
+    public static List<Student> studentList = initializeStudents();
+    public static List<Professor> professorList = initializeProfessors();
 
-    public static  ArrayList<Student> initializeStudents() {
+    public static  List<Student> initializeStudents() {
         ArrayList<Student> studentList = new ArrayList<Student>();
         Student student1 = new Student("Tom", "Brown");
         Student student2 = new Student("Jon", "Goldstein");
@@ -94,7 +94,7 @@ public final class Utility {
      * 
      * @return
      */
-    public static ArrayList<Professor> initializeProfessors() {
+    public static List<Professor> initializeProfessors() {
         ArrayList<Professor> professorList = new ArrayList<Professor>();
 
         Professor professor1 = new Professor("Jeffrey", "Popyack");
