@@ -90,7 +90,7 @@ writing something like
 ```bash 
 (int i=0, i<studentList.size(), i++) 
 ```
-can be shortened to 
+can be shortened to the following
 ```bash 
 studentList.forEach(student-> {});
 ```
