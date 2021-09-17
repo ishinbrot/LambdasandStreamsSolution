@@ -20,8 +20,8 @@
 | :--------------------------------------------------------------------------------------------- |
 | [Part 0: Getting Started](../../tree/part0)                                                    |
 | [Part 1: Introduction to  Java Stream filters amd lambdas](../../tree/part1)                    |
-| [Part 2: Sort and Count Using the Java Stream API](../../tree/part2)     |
-| [Part 3: Java Stream Grouping](#part-3-Java-Stream-Grouping) |
+| [Part 2: Sort Using the Java Stream API](../../tree/part2)     |
+| [Part 3: Java Stream Grouping and Count](#part-3-Java-Stream-Grouping) |
 
 ## Working branch
 
@@ -67,12 +67,13 @@ java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
 ```
 You may alternatively use the built-in compilier in your specific IDE
 
-## Overview: Introducing Java Stream Grouping functionality
+## Overview: Introducing Java Stream Grouping and Count functionality
 
 Every student now has an associated major with them. We would like to create a map that describes a relation of a students major to a list of the respective students.
 Java stream allows us to easily group matching elements in a list, as well as construct a new hashmap. This can be done using 1 line. <br/>
 
-For the second step of the excercise we need to print out all of the Jon's for each associated major. You will need to iterate through the new hashmap and filter out all the students with the first name Jon.
+For the second step of the excercise we want to print out the total number of Jon's for each major. This will be done using Java stream count.
+For the last step of the excercise you will need to iterate through the new hashmap and print out the first instance of Jon for each major.
 We want to print out the students full name, and their associated major, only if they exist. If they do not exist then we will not print anything out for each respective major
 
 Print out the students with the first name Jon. Not all of the majors have students with the first name Jon <br/>
@@ -82,6 +83,18 @@ The grouping by operation should be done similar to below
 ```bash
 goupingBy([AttributeHere])
 ```
+
+
+## Answer Key
+
+Your output should look like the following:
+
+Major:Computer Science has 1 number of students with the first name Jon. <br/>
+Major:Computer Science with student Jon Goldstein<br/>
+Major:Business Administration has 0 number of students with the first name Jon. <br/>
+Major:Data Analytics has 1 number of students with the first name Jon. <br/>
+Major:Data Analytics with student Jon Tucker<br/>
+Major:Graphic Design has 0 number of students with the first name Jon. <br/>
 ## Recommended Resources
 You can reference how to use groupingBy on this page 
 https://www.baeldung.com/java-groupingby-collector
