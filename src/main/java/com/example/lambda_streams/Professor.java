@@ -8,6 +8,8 @@ private String lastName;
 private String firstName;
 private String className = new String();
 private int grade = 0;
+private ArrayList<Student> studentList = new ArrayList<Student>();
+
     public Professor(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -39,6 +41,17 @@ private int grade = 0;
     }
 
 
+    public ArrayList<Student> getStudentList() {
+        return this.studentList;
+    }
+
+    public void setStudentList(ArrayList<Student> studentList) {
+        this.studentList = studentList;
+    }
+    public void addStudent(Student student) {
+        this.studentList.add(student);
+    }
+    
     public int getGrade() {
         return this.grade;
     }
@@ -46,7 +59,6 @@ private int grade = 0;
     public void setGrade(int grade) {
         this.grade = grade;
     }
-    
 
     @Override
     public String toString() {
@@ -54,6 +66,7 @@ private int grade = 0;
             " lastName='" + getLastName() + "'" +
             ", firstName='" + getFirstName() + "'" +
             ", classTeaching='" + className + "'" +
+            ", studentList='" + this.studentList.toString() + "'" +
             "}";
     }
 

@@ -10,6 +10,11 @@ public final class Utility {
     private  static String class4 = "Maven101";
     private  static String class5 = "Databases";
 
+    private static String major1 = "Computer Science";
+    private static String major2 = "Business Administration";
+    private static String major3 = "Data Analytics";
+    private static String major4 = "Graphic Design";
+
     public static ArrayList<Student> studentList = initializeStudents();
     public static ArrayList<Professor> professorList = initializeProfessors();
 
@@ -19,7 +24,7 @@ public final class Utility {
         Student student2 = new Student("Jon", "Goldstein");
         Student student3 = new Student("Pat", "Salemo");
         Student student4 = new Student("Jack", "Smith");
-        Student student5 = new Student("Jon", "Goldstein");
+        Student student5 = new Student("Jon", "Tucker");
         Student student6 = new Student("Jack", "Ryan");
         Student student7 = new Student("Tim", "Scott");
         Student student8 = new Student("Jenna", "Pascal");
@@ -67,6 +72,26 @@ public final class Utility {
         student4.addClass(class2);
         student4.addClass(class5);
 
+        student1.setMajor(major1);
+        student2.setMajor(major1);
+        student3.setMajor(major4);
+        student4.setMajor(major2);
+        student5.setMajor(major3);
+        student6.setMajor(major4);
+        student7.setMajor(major2);
+        student8.setMajor(major4);
+        student9.setMajor(major2);
+        student10.setMajor(major1);
+        student11.setMajor(major2);
+        student12.setMajor(major1);
+        student13.setMajor(major1);
+        student14.setMajor(major4);
+        student15.setMajor(major4);
+        student16.setMajor(major1);
+        student17.setMajor(major2);
+        student18.setMajor(major3);
+        student19.setMajor(major3);
+        student20.setMajor(major3);
         studentList.add(student1);
         studentList.add(student2);
         studentList.add(student3);

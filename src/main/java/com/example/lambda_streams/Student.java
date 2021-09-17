@@ -7,6 +7,7 @@ public class Student implements Person {
     private String lastName;
     private String firstName;
     private long GPA = 0;
+    private String major;
     ArrayList<Professor> professorList = new ArrayList<>();
 
     private ArrayList<String> classListName = new ArrayList<String>();
@@ -76,12 +77,22 @@ public class Student implements Person {
     public void addProfessor(Professor professor) {
         this.professorList.add(professor);
     }
+
+    public String getMajor() {
+        return this.major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+    
     
     @Override
     public String toString() {
         return "{" +
             " lastName='" + getLastName() + "'" +
             ", firstName='" + getFirstName() + "'" +
+            ", major='" + getMajor() + "'" +
             ", classList='" + getClassesAsString() + "'" +
             ", professorList='" + this.professorList.toString() + "'" +
             "}";
