@@ -71,7 +71,7 @@ You may alternatively use the built-in compilier in your specific IDE
 ## Overview: Introduction to Sort using Java Streams
 Welcome to Part 2 of the Lambda and Streams TechChallenge!
 
-In part 2 we would like to sort each student by their last name, while displaying their total GPA.
+In part 2 we would like to sort each student by their last name (in ascending order), while displaying their total GPA.
 
 
 
