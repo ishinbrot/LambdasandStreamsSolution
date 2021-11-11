@@ -72,7 +72,7 @@ You may alternatively use the built-in compilier in your specific IDE
 ## Overview: Introduction to Sort and Reducers using Java Streams
 Welcome to Part 2 of the Lambda and Streams TechChallenge!
 
-In part 2 we would like to sort each student by their last and first name (in ascending order), while calculating a students GPA.
+In part 2 we are going to sort each student by their last and first name (in ascending order), while calculating a students GPA.
 A students grade is calculated using the following method: <br/>
 The length of a students first name multipled by 2. 
 The students grade will then be divided by their number of credits. The number of credits for each student will be identified by the number of professors a student has.
@@ -83,7 +83,7 @@ For this excercise you will first update the 'ComputeGPA' function to calculate 
 You will then update the sortStudents function to sort the students first and last names. <br/>
 You will then update the helper method to utilize the 'ComputeGPA' and 'sortStudents' function using Streams, and pring out the results like so
 
-You will then update the main method to sort the students by last name, and print out the following:
+You will then update the helper method to sort the students by last name, and your output should be similar to the following:
 
 Tom Brown grade 0.85 <br/>
 Tony Brown grade 2.0 <br/>
