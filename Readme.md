@@ -19,7 +19,7 @@
 |                                                                                                |
 | :--------------------------------------------------------------------------------------------- |
 | [Part 0: Getting Started](../../tree/part0)                                                    |
-| [Part 1: Introduction to  Java Stream filters amd lambdas](../../tree/part1)                    |
+| [Part 1: Introduction to Java Stream filters amd lambdas](../../tree/part1)                    |
 | [Part 2: Sort Using the Java Stream API](#part-2-Java-Stream-Sort-And-Count)     |
 | [Part 3: Java Stream Grouping and Count Functionality](../../tree/part3) |
 
@@ -87,19 +87,12 @@ Utilizing Java Streams this can be done in less than 7 lines (including brackets
 Utilzing Java Streams and Lambdas we can iterate through the array more simply...
 
 ## Java Lambdas 
-writing something like 
-```bash 
-(int i=0, i<studentList.size(), i++) 
-```
-can be shortened to the following
-```bash 
-studentList.forEach(student-> {});
-```
 
+When iterating through the ArrayList be sure to utilize Java streams, foreach, and filter.
 
 ## Answer key:
 
-For this excercise you will update the App.java class and implement the method determineStudentsinEachClass utilizing streams and lambdas. Feel free to utilize the resource from stackify below or any resources to assist you online.<br/><br/>
+For this excercise you will update the App.java class and implement the method determineStudentsinEachClass utilizing streams and lambdas. Feel free to utilize the resource from stackify below or any resources other resources you may find online.<br/><br/>
 When your application runs your output should appear as follows:
 
 Professor Jeffrey Popyack has the following students: Jon Goldstein <br/>
