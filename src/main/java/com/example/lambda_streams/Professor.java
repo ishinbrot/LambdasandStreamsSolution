@@ -5,8 +5,8 @@ public class Professor implements Person {
 
 private String lastName;
 private String firstName;
-private String className = new String();
-private int grade = 0;
+private String classToTeach;
+private int credits = 0;
     public Professor(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -30,20 +30,20 @@ private int grade = 0;
     }
 
     public String getClassTeaching() {
-        return this.className;
+        return this.classToTeach;
     }
 
     public void setClassTeaching(String classesToTeach) {
-        this.className = classesToTeach;
+        this.classToTeach = classesToTeach;
     }
 
 
-    public int getGrade() {
-        return this.grade;
+    public int getCredits() {
+        return this.credits;
     }
 
-    public void setGrade(int grade) {
-        this.grade = grade;
+    public void setCredits(int grade) {
+        this.credits = grade;
     }
     
 
@@ -52,7 +52,7 @@ private int grade = 0;
         return "{" +
             " lastName='" + getLastName() + "'" +
             ", firstName='" + getFirstName() + "'" +
-            ", classTeaching='" + className + "'" +
+            ", classTeaching='" + classToTeach + "'" +
             "}";
     }
 

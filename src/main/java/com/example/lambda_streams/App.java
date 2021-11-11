@@ -1,56 +1,53 @@
 package com.example.lambda_streams;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Map;
 
 public final class App {
 
     public static void main(String[] args) {
 
         new App().helper();
-
+        
     }
-
+    
     private void helper() {
-         // the student and professor list come from static variables in the Utility class
-         List<Student> studentList = determineStudentsinEachClass(Utility.studentList, Utility.professorList);
+                List<Student> studentList = Utility.determineStudentsinEachClass();
 
-         studentList = computeGPA(studentList);
- 
-        studentList =  studentList.stream().sorted((o1, o2) -> o1.getLastName().compareTo(o2.getLastName())).collect(Collectors.toList());
-     
-    }
+                 studentList.stream().sorted(this::sortStudents).map(this::computeGPA)
+                 .forEach(s->System.out.println(s.getFirstName() + " " + s.getLastName()+" grade "+s.getGPA()));
 
-    private static void determineStudentsByMajor(List<Student> studentList) {
-
-    }
-
-    private static List<Student> determineStudentsinEachClass(List<Student> studentList, List<Professor> professorList) {
-        // Populate the following method using Java streams to complete the answer
-        professorList.forEach(p-> {
-            Stream<Student> studentsInClass = studentList.stream().
-            sorted(Comparator.comparing(Student::getLastName)).
-            filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
-            studentsInClass.forEach(s-> { 
-                s.addProfessor(p);
-                long grade = p.getGrade() + s.getGPA();
-                s.setGPA(grade);
-            });
-            
-        });
-        return studentList;
     }
 /**
- * This function calculates each students GPA by computing their grade in the class by the amount of professors in each class
+ * This method will print out a list of the students by major.
+ * This method will only print out all the Jons for each respective Major.
+ * If a major does not have any students named Jon, then nothing will be printed for that Major
+ * @param studentByMajor
+ */
+    private void determineStudentsByMajor(Map<String, List<Student>> studentByMajor) {
+    }
+
+/**
  * @param studentList
  * @return
  */
-    private static List<Student> computeGPA(List<Student> studentList) {
-          studentList.forEach(s -> s.setGPA(s.getGPA() / s.getProfessorList().size()));
-
-          return studentList;
+    private  Student computeGPA(Student student) {
+        float grade = student.getFirstName().length() * 2;
+        float credits = student.getProfessorList().stream().map(Professor::getCredits).reduce(0, (a, b) -> a + b);
+        double gpa = grade/credits;
+        student.setGPA(gpa);
+        return student;
     }
 
+/**
+ * @param student1
+ * @param student2
+ */
+    private int sortStudents(Student student1, Student student2) {
+        
+        if (student1.getLastName().compareTo(student2.getLastName()) == 0) {
+            return (student1.getFirstName().compareTo(student2.getFirstName())); 
+        }
+            else return (student1.getLastName().compareTo(student2.getLastName()));
+    }
 }

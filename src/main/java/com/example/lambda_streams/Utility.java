@@ -1,6 +1,9 @@
 package com.example.lambda_streams;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Stream;
 
 public final class Utility {
     
@@ -10,21 +13,16 @@ public final class Utility {
     private  static String class4 = "Maven101";
     private  static String class5 = "Databases";
 
-    private static String major1 = "Computer Science";
-    private static String major2 = "Business Administration";
-    private static String major3 = "Data Analytics";
-    private static String major4 = "Graphic Design";
+    public static List<Student> studentList = initializeStudents();
+    public static List<Professor> professorList = initializeProfessors();
 
-    public static ArrayList<Student> studentList = initializeStudents();
-    public static ArrayList<Professor> professorList = initializeProfessors();
-
-    public static  ArrayList<Student> initializeStudents() {
-        ArrayList<Student> studentList = new ArrayList<Student>();
+    public static  List<Student> initializeStudents() {
+        List<Student> studentList = new ArrayList<Student>();
         Student student1 = new Student("Tom", "Brown");
         Student student2 = new Student("Jon", "Goldstein");
         Student student3 = new Student("Pat", "Salemo");
         Student student4 = new Student("Jack", "Smith");
-        Student student5 = new Student("Jon", "Tucker");
+        Student student5 = new Student("Jon", "Goldstein");
         Student student6 = new Student("Jack", "Ryan");
         Student student7 = new Student("Tim", "Scott");
         Student student8 = new Student("Jenna", "Pascal");
@@ -72,26 +70,6 @@ public final class Utility {
         student4.addClass(class2);
         student4.addClass(class5);
 
-        student1.setMajor(major1);
-        student2.setMajor(major1);
-        student3.setMajor(major4);
-        student4.setMajor(major2);
-        student5.setMajor(major3);
-        student6.setMajor(major4);
-        student7.setMajor(major2);
-        student8.setMajor(major4);
-        student9.setMajor(major2);
-        student10.setMajor(major1);
-        student11.setMajor(major2);
-        student12.setMajor(major1);
-        student13.setMajor(major1);
-        student14.setMajor(major4);
-        student15.setMajor(major4);
-        student16.setMajor(major1);
-        student17.setMajor(major2);
-        student18.setMajor(major3);
-        student19.setMajor(major3);
-        student20.setMajor(major3);
         studentList.add(student1);
         studentList.add(student2);
         studentList.add(student3);
@@ -121,8 +99,8 @@ public final class Utility {
      * 
      * @return
      */
-    public static ArrayList<Professor> initializeProfessors() {
-        ArrayList<Professor> professorList = new ArrayList<Professor>();
+    public static List<Professor> initializeProfessors() {
+        List<Professor> professorList = new ArrayList<Professor>();
 
         Professor professor1 = new Professor("Jeffrey", "Popyack");
         Professor professor2 = new Professor("Jack", "Dawson");
@@ -137,11 +115,11 @@ public final class Utility {
         professor4.setClassTeaching(class4);
         professor5.setClassTeaching(class5);
 
-        professor1.setGrade(3);
-        professor2.setGrade(4);
-        professor3.setGrade(2);
-        professor4.setGrade(3);
-        professor5.setGrade(5);
+        professor1.setCredits(3);
+        professor2.setCredits(4);
+        professor3.setCredits(2);
+        professor4.setCredits(3);
+        professor5.setCredits(5);
         professorList.add(professor1);
         professorList.add(professor2);
         professorList.add(professor3);
@@ -149,5 +127,19 @@ public final class Utility {
         professorList.add(professor5);
 
         return professorList;
+    }
+
+    public static List<Student> determineStudentsinEachClass() {
+
+        professorList.forEach(p-> {
+            Stream<Student> studentsInClass = studentList.stream()
+            .sorted(Comparator.comparing(Student::getLastName))
+            .filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
+            studentsInClass.forEach(s-> { 
+                s.addProfessor(p);
+            });
+            
+        });
+        return studentList;
     }
 }

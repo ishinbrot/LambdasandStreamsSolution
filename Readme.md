@@ -68,7 +68,7 @@ java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
 You may alternatively use the built-in compilier in your specific IDE
 
 ## Overview: Introducing Java Stream Grouping and Count functionality
-In part 3 of the tech challenge we will learn how to create seperate relations of each major to the 
+In part 3 of the tech challenge we will learn how to create seperate maps of each major utilizing Java Streams.
 Java stream allows us to easily group matching elements in a list, as well as construct a new hashmap. This can be done using 1 line. <br/>
 
 For the second step of the excercise we want to print out the total number of Jon's for each major. This will be done using Java stream count.
@@ -77,8 +77,6 @@ We want to print out the students full name, and their associated major, only if
 
 Print out the students with the first name Jon. Not all of the majors have students with the first name Jon <br/>
 Be sure to perform all of the operations on one line.
-
-
 
 ## Answer Key
 
