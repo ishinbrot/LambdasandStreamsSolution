@@ -1,9 +1,6 @@
 package com.example.lambda_streams;
 
-import java.util.Comparator;
 import java.util.List;
-
-import java.util.stream.Stream;
 
 public final class App {
 
@@ -12,39 +9,42 @@ public final class App {
         new App().helper();
         
     }
-    // use Java streams to inform each professor who is taking their specific class, and how which student is in each class
-
+    
+        // Utilize the sortStudents and computeGPA method and print out each student followed by their GPA
     private void helper() {
-                // the student and professor list come from static variables in the Utility class
-                List<Student> studentList = determineStudentsinEachClass(Utility.studentList, Utility.professorList);
+                List<Student> studentList = Utility.determineStudentsinEachClass();
 
-                studentList = computeGPA(studentList);
+                 studentList.stream().sorted(this::sortStudents).map(this::computeGPA)
+                 .forEach(s->System.out.println(s.getFirstName() + " " + s.getLastName()+" grade "+s.getGPA()));
+  
     }
 
-    private  List<Student> determineStudentsinEachClass(List<Student> studentList, List<Professor> professorList) {
-        // Populate the following method using Java streams to complete the answer
 
-        professorList.forEach(p-> {
-            Stream<Student> studentsInClass = studentList.stream()
-            .sorted(Comparator.comparing(Student::getLastName))
-            .filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
-            studentsInClass.forEach(s-> { 
-                s.addProfessor(p);
-                long grade = p.getGrade() + s.getGPA();
-                s.setGPA(grade);
-            });
-            
-        });
-        return studentList;
-    }
 /**
- * This function calculates each students GPA by computing their grade in the class by the amount of professors in each class
+ * Implement the following function to calculate a students GPA.
+ * Remember the business logic for a students grade is the students first name multipled by 2
+ * The credits a student will have will be defined by adding up the credits attribute from all their professors
  * @param studentList
  * @return
  */
-    private  List<Student> computeGPA(List<Student> studentList) {
-
-          return studentList;
+    private  Student computeGPA(Student student) {
+            float grade = student.getFirstName().length() * 2;
+            float credits = student.getProfessorList().stream().map(Professor::getCredits).reduce(0, (a, b) -> a + b);
+            double gpa = grade/credits;
+            student.setGPA(gpa);
+          return student;
     }
 
+/**
+ * Implement the following function to sort students by their last name, followed by their first name in ascending order
+ * @param student1
+ * @param student2
+ */
+    private int sortStudents(Student student1, Student student2) {
+        
+        if (student1.getLastName().compareTo(student2.getLastName()) == 0) {
+            return (student1.getFirstName().compareTo(student2.getFirstName())); 
+        }
+            else return (student1.getLastName().compareTo(student2.getLastName()));
+    }
 }

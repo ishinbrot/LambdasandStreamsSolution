@@ -1,23 +1,24 @@
 package com.example.lambda_streams;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student implements Person {
 
     private String lastName;
     private String firstName;
-    private long GPA = 0;
-    ArrayList<Professor> professorList = new ArrayList<>();
+    private double gpa = 0;
+    List<Professor> professorList;
 
-    private ArrayList<String> classListName = new ArrayList<String>();
+    private List<String> classListName;
 
 
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    public Student(String firstName, String lastName, int GPA) {
-        this.GPA = GPA;
+    public Student(String firstName, String lastName, double gpa) {
+        this.gpa = gpa;
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -38,7 +39,7 @@ public class Student implements Person {
         this.firstName = firstName;
     }
 
-    public ArrayList<String> getClassList() {
+    public List<String> getClassList() {
         return this.classListName;
     }
 
@@ -55,25 +56,31 @@ public class Student implements Person {
     }
 
     public void addClass(String className) {
+        if (classListName == null ) {
+            classListName = new ArrayList<String>();
+        }
         this.classListName.add(className);
     }
 
-    public long getGPA() {
-        return this.GPA;
+    public double getGPA() {
+        return this.gpa;
     }
 
-    public void setGPA(long GPA) {
-        this.GPA = GPA;
+    public void setGPA(double gpa) {
+        this.gpa = Math.floor( gpa* 100) / 100;
     }
 
-    public ArrayList<Professor> getProfessorList() {
+    public List<Professor> getProfessorList() {
         return this.professorList;
     }
 
-    public void setProfessorList(ArrayList<Professor> professorList) {
+    public void setProfessorList(List<Professor> professorList) {
         this.professorList = professorList;
     }
     public void addProfessor(Professor professor) {
+        if (this.professorList == null ) {
+            professorList = new ArrayList<Professor>();
+        }
         this.professorList.add(professor);
     }
     
