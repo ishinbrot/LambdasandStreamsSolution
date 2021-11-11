@@ -84,7 +84,6 @@ Calculate the total number of points each student has, and assign it to each stu
 ## Using Java Streams
 Normally in Java 7 and below, this will be done with a long iteration that would take multiple lines to write
 Utilizing Java Streams this can be done in less than 7 lines (including brackets).
-Utilzing Java Streams and Lambdas we can iterate through the array more simply...
 
 ## Java Lambdas 
 
