@@ -23,6 +23,10 @@ public final class App {
      
     }
 
+    private static void determineStudentsByMajor(List<Student> studentList) {
+
+    }
+
     private static List<Student> determineStudentsinEachClass(List<Student> studentList, List<Professor> professorList) {
         // Populate the following method using Java streams to complete the answer
         professorList.forEach(p-> {
