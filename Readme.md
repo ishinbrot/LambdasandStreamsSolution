@@ -98,7 +98,9 @@ studentList.forEach(student-> {});
 
 
 ## Answer key:
-Your output should appear as follows:
+
+For this excercise you will update the App.java class and implement the method determineStudentsinEachClass utilizing streams and lambdas. Feel free to utilize the resource from stackify below or any resources to assist you online.<br/><br/>
+When your application runs your output should appear as follows:
 
 Professor Jeffrey Popyack has the following students: Jon Goldstein <br/>
 Pat Salemo<br/>
