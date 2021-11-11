@@ -25,7 +25,9 @@ public final class App {
         // Populate the following method using Java streams to complete the answer
 
         professorList.forEach(p-> {
-            Stream<Student> studentsInClass = studentList.stream().sorted(Comparator.comparing(Student::getLastName)).filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
+            Stream<Student> studentsInClass = studentList.stream()
+            .sorted(Comparator.comparing(Student::getLastName))
+            .filter(s->s.getClassesAsString().contains(p.getClassTeaching()));
             studentsInClass.forEach(s-> { 
                 s.addProfessor(p);
                 long grade = p.getGrade() + s.getGPA();

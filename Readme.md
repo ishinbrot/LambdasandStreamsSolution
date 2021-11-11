@@ -69,34 +69,22 @@ You may alternatively use the built-in compilier in your specific IDE
 ```
 
 ## Overview: Introduction to Sort using Java Streams
+Welcome to Part 2 of the Lambda and Streams TechChallenge!
 
-Now that you have identified which professor is teaching which students using java streams, it is time to sort each class by a students last name.
-Every professor contains a list of students, along with their respective class list<br/>
+In part 2 we would like to sort each student by their last name, while displaying their total GPA.
 
-The first task of this exercise is to modify the forEach implementation while calculating every students grade to a utilizing the map method. Keep in mind that the java stream map implementation returns
-an object instead of simply iterating through a collection
 
-Every class the professor teaches is graded on either a pass/fail, but affects the students GPA differently.<br/>
-Each professor has a specifc grade in their class. That is the grade they will automatically give every student upon completing.<br/>
-Use the grades to update each students new GPA. Utilize Java Streams and Lambda functions.
 
-Every professor is assigned a grade, and has given each student their respective grade. All of the students have had their total number of grade points added up.<br/>
-They do not yet have their GPA. In order to compute their GPA you need to divide their grade by the number of classes they are taking<br/>
+## Answer Key:
+For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA based on the number of professors they have.
 
 After you are done sort all of the students by their last name and print out the output using java streams in one line<br/>
 Use the updated Java 8 interface for sorting the list using a comparator lambda function to return a new stream.<br/>
 Please use collect afterwards to construct a new list from the sorted list<br/>
 Sorting the array can be done on one line using Java Stream
 
-The following stream functions will be used in this excercise
+You will then update the main method to sort the students by last name, and print out the following:
 
-```bash
-.sorted()
-.collect()
-```
-
-## Answer Key:
-The output of the application should look like below: <br/>
 Tom Brown grade 3 <br/>
 Tony Brown grade 4 <br/>
 Robert DeNiro grade 3 <br/>
