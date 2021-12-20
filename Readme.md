@@ -79,11 +79,11 @@ The students grade will then be divided by their number of credits. The number o
 The reducer function will be utilized to add up all the credits from the list of students professors
 
 ## Answer Key:
-For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. <br/>
+For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. The formula is the length of a students first name multipled by 2. <br/>
 You will then update the sortStudents function to sort the students first and last names. <br/>
 You will then update the helper method to utilize the 'ComputeGPA' and 'sortStudents' function using Streams, and pring out the results like so
-
-You will then update the helper method to sort the students by last name, and your output should be similar to the following:
+You will then update the helper method to sort the students by last name.
+When your application runs your output should appear as follows:
 
 Tom Brown grade 0.85 <br/>
 Tony Brown grade 2.0 <br/>
