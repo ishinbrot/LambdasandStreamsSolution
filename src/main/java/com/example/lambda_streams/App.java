@@ -14,8 +14,6 @@ public final class App {
     private void helper() {
                 List<Student> studentList = Utility.determineStudentsinEachClass();
 
-                 studentList.stream().sorted(this::sortStudents).map(this::computeGPA)
-                 .forEach(s->System.out.println(s.getFirstName() + " " + s.getLastName()+" grade "+s.getGPA()));
 
     }
 /**
