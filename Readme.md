@@ -81,7 +81,7 @@ Be sure to perform all of the operations on one line.
 ## Answer Key
 
 For this excercise you will update the method determineStudentsByMajor to categorize each student by Major.
-You will then filter by each student named Jon, and grab a count of the number of students with that name.
+You will then filter by each student named Jon, and grab a count of the number of students with that name. </br>
 Your output should look like the following:
 
 Major:Computer Science has 1 number of students with the first name Jon. <br/>
@@ -90,6 +90,7 @@ Major:Business Administration has 0 number of students with the first name Jon. 
 Major:Data Analytics has 1 number of students with the first name Jon. <br/>
 Major:Data Analytics with student Jon Tucker<br/>
 Major:Graphic Design has 0 number of students with the first name Jon. <br/>
+
 ## Recommended Resources
 You can reference how to use groupingBy on this page 
 https://www.baeldung.com/java-groupingby-collector
