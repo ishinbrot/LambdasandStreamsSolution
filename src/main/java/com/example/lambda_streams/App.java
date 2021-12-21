@@ -15,7 +15,10 @@ public final class App {
     
     private void helper() {
                 List<Student> studentList = Utility.determineStudentsinEachClass();
+                studentList =  studentList.stream().sorted((o1, o2) -> o1.getFirstName().compareTo(o2.getFirstName())).collect(Collectors.toList());
 
+                Map<String, List<Student>> studentByMajor = studentList.stream().collect(Collectors.groupingBy(Student::getMajor));
+                determineStudentsByMajor(studentByMajor);
 
     }
 /**
@@ -25,7 +28,18 @@ public final class App {
  * @param studentByMajor
  */
     private void determineStudentsByMajor(Map<String, List<Student>> studentByMajor) {
+        studentByMajor.forEach((k ,v ) -> {
+            long totalNumberofJons = v.stream().filter(s->(s.getFirstName().equals("Jon"))).count();
+            System.out.println("Major:" + k + " has " + totalNumberofJons + " number of students with the first name Jon. ");
+            Optional<Student> student = v.stream().
+            filter(s -> (s.getFirstName().equals("Jon")))
+            .findFirst();
+            if (student.isPresent()) {
+                System.out.println("Major:" + k + " with student " + student.get().getFirstName() + " " + student.get().getLastName());
+            }
+        });
 
+        System.out.print("\n");
     }
 
 /**
