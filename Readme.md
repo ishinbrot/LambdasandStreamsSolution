@@ -72,16 +72,23 @@ You may alternatively use the built-in compilier in your specific IDE
 ## Overview: Introduction to Sort and Reducers using Java Streams
 Welcome to Part 2 of the Lambda and Streams TechChallenge!
 
-In part 2 we are going to sort each student by their last and first name (in ascending order), while calculating a students GPA.
+In part 2 we are going to sort each student by their last name (in ascending order), while calculating a students GPA.
 A students grade is calculated using the following method: <br/>
 The length of a students first name multipled by 2. 
-The students grade will then be divided by their number of credits. The number of credits for each student will be identified by the number of professors a student has.
-The reducer function will be utilized to add up all the credits from the list of students professors
+The students grade will then be divided by their number of credits. <br/>
+The number of credits for each student will be identified by the number of professors a student has. <br/>
+The reducer function will be utilized to add up all the credits from the list of students professors.
 
 ## Answer Key:
-For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. The formula is the length of a students first name multipled by 2. <br/>
+For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. 
+The formula for the total Grade is the length of a students first name multipled by 2. <br/>
+
+E.X. Tom Brown has a length of 3 and a Grade of 6.
+     Tom Brown has 7 credits as he is taking classes with Timothy Donahue and Jack Donahue.
+     6/7 gives a total average of .85
+The java streams map and reduce function can be used to assist in the calculation
 You will then update the sortStudents function to sort the students first and last names. <br/>
-You will then update the helper method to utilize the 'ComputeGPA' and 'sortStudents' function using Streams, and pring out the results like so
+You will then update the helper method to utilize the 'ComputeGPA' and 'sortStudents' function using Streams, and print out the results like so
 You will then update the helper method to sort the students by last name.
 When your application runs your output should appear as follows:
 
