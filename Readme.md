@@ -79,17 +79,20 @@ The students grade will then be divided by their number of credits. <br/>
 The number of credits for each student will be identified by the number of professors a student has. <br/>
 The reducer function will be utilized to add up all the credits from the list of students professors.
 
-## Answer Key:
 For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. 
 The formula for the total Grade is the length of a students first name multipled by 2. <br/>
 
-E.X. Tom Brown has a length of 3 and a Grade of 6.
-     Tom Brown has 7 credits as he is taking classes with Timothy Donahue and Jack Donahue.
-     6/7 gives a total average of .85
-The java streams map and reduce function can be used to assist in the calculation
+Example: Tom Brown has a length of 3 and a Grade of 6. <br/>
+     Tom Brown has 7 credits as he is taking classes with Timothy Donahue and Jack Donahue. <br/>
+     6/7 gives a total average of .85 <br/>
+     <br/>
+The java streams map and reducer functions can be used to assist in the calculation when adding up the total credits from the professors <br/>
 You will then update the sortStudents function to sort the students first and last names. <br/>
 You will then update the helper method to utilize the 'ComputeGPA' and 'sortStudents' function using Streams, and print out the results like so
 You will then update the helper method to sort the students by last name.
+
+## Answer Key:
+
 When your application runs your output should appear as follows:
 
 Tom Brown grade 0.85 <br/>
