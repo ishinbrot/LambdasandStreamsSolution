@@ -1,7 +1,7 @@
 ![CapTech Banner](https://github.com/captechconsulting/springboot-techchallenge/blob/part0/src/main/resources/images/CaptechLogo.png)
 
-# Part 2: Java and Lambda tech challenge
 
+# Part 3: Java and Lambda tech challenge
 
 ## Table of Contents
 
@@ -14,15 +14,14 @@
 - [Answer Key](#answer-key)
 - [Recommended Resources](#recommended-resources)
 
-
 ## Parts
 
 |                                                                                                |
 | :--------------------------------------------------------------------------------------------- |
 | [Part 0: Getting Started](../../tree/part0)                                                    |
 | [Part 1: Introduction to  Java Stream filters and lambdas](../../tree/part1)                    |
-| [Part 2: Sort, Reducers, and Maps Using the Java Stream API](#part-2-Java-Stream-Sort)     |
-| [Part 3: Java Stream Grouping and Count](../../tree/part3) |
+| [Part 2: Sort Using the Java Stream API](../../tree/part2)     |
+| [Part 3: Java Stream Grouping and Count](#part-3-Java-Stream-Grouping) |
 
 ## Working branch
 
@@ -30,19 +29,19 @@
 1. Check out the starter code for part one:
 
     ```bash
-    git checkout part2
+    git checkout part3
     ```
 
 1. Create a new branch for your development work:
 
     ```bash
-    git checkout -b develop/part2
+    git checkout -b develop/part3
     ```
 
 1. Push your new local branch to the remote repository and set your local branch to track the new remote branch:
 
     ```bash
-    git push -u origin develop/part2
+    git push -u origin develop/part3
     ```
 
 After you have completed your work for each part and committed & pushed your changes up to the remote repository, you
@@ -51,7 +50,7 @@ are ready to open a pull request for submission.
 ## Submission
 
 1. Navigate to your GitHub repository
-1. Open a pull request from your working branch to the starting branch (`develop/part2`&rarr;`part2`).
+1. Open a pull request from your working branch to the starting branch (`develop/part1`&rarr;`part3`).
 
 > Be sure to assign a reviewer so they will receive a notification that your solution is ready for review.
 >
@@ -68,58 +67,36 @@ java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
 ```
 You may alternatively use the built-in compilier in your specific IDE
 
+## Overview: Introducing Java Stream Grouping and Count functionality
+In part 3 of the tech challenge we will learn how to create split up the students by major utilizing Java Streams. <br/>
+You will then print out all the Jon's in the student list as well as their given major. <br/>
+Java stream allows us to easily group matching elements in a list, as well as construct a new hashmap.<br/>
 
-## Overview: Introduction to Sort and Reducers using Java Streams
-Welcome to Part 2 of the Lambda and Streams TechChallenge!
 
-In part 2 we are going to sort each student by their last name (in ascending order), while calculating a students GPA.
-A students grade is calculated using the following method: <br/>
-The length of a students first name multipled by 2. 
-The students grade will then be divided by their number of credits. <br/>
-The number of credits for each student will be identified by the number of professors a student has. <br/>
-The reducer function will be utilized to add up all the credits from the list of students professors.  <br/><br/>
+## Approach
+Please group the names in the list in alphabetical order by first name. <br/>
+This can be done by using the streams sorted function and lambdas. <br/>
+To seperate the student List by major the groupingBy function can be used to seperate each student by Major. <br/>
+For the second step of the excercise we want to print out the total number of Jon's for each major. This will be done using Java stream count method. <br/>
+For the last step of the excercise you will need to iterate through the new hashmap and print out the first instance of Jon for each major. Use the filter function to ensure you are only looping through the Jons in the list.<br/>
+We want to print out the students full name, and their associated major, only if they exist. <br/>
+Print out the students with the first name Jon. Not all of the majors have students with the first name Jon <br/>
 
-## Approach:
-For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. 
-The formula for the total Grade is the length of a students first name multipled by 2. <br/>
-Example: Tom Brown has a length of 3 and a Grade of 6. <br/>
-     Tom Brown has 7 credits as he is taking classes with Timothy Donahue and Jack Donahue. <br/>
-     6/7 gives a total average of .85 <br/>
-     <br/>
-The java streams map and reducer functions can be used to assist in the calculation when adding up the total credits from the professors <br/>
-You will then update the sortStudents function to sort the students first and last names. <br/>
-You will then update the helper method to utilize the 'ComputeGPA' and 'sortStudents' function using Streams, and print out the results like so
-You will then update the helper method to sort the students by last name.
+**If the student does not exist then we will not print anything out for each respective major**
 
-## Answer Key:
 
-When your application runs your output should appear as follows:
+## Answer Key
 
-Tom Brown grade 0.85 <br/>
-Tony Brown grade 2.0 <br/>
-Robert DeNiro grade 4.0 <br/>
-Jenna Goldstein grade 1.42 <br/>
-Jon Goldstein grade 1.2 <br/>
-Jon Goldstein grade 1.5 <br/>
-Jim Halpert grade 1.0 <br/>
-Pam Halpert grade 1.2 <br/>
-Pete Halpert grade 2.0 <br/>
-Jenna Pascal grade 3.33 <br/>
-Jack Ryan grade 2.0 <br/>
-Pat Salemo grade 0.75 <br/>
-Dwight Schrute grade 2.4 <br/>
-Mose Schrute grade 0.8 <br/>
-Michael Scott grade 3.5 <br/>
-Pam Scott grade 1.0 <br/>
-Tim Scott grade 3.0 <br/>
-Jack Smith grade 0.88 <br/>
-Tim Smith grade 2.0 <br/>
-Ty Timothy grade 0.8 <br/>
+Your output should look like the following:
+
+Major:Computer Science has 1 number of students with the first name Jon. <br/>
+Major:Computer Science with student Jon Goldstein<br/>
+Major:Business Administration has 0 number of students with the first name Jon. <br/>
+Major:Data Analytics has 1 number of students with the first name Jon. <br/>
+Major:Data Analytics with student Jon Tucker<br/>
+Major:Graphic Design has 0 number of students with the first name Jon. <br/>
 
 ## Recommended Resources
+You can reference how to use the groupingBy function on this page 
+https://www.baeldung.com/java-groupingby-collector
 
-You may wish to consult the following resources for useful information on utilizing Java Streams and Lambdas
-
-- [Java Streams](https://stackify.com/streams-guide-java-8/)
-- [Lambda Expressions](https://www.geeksforgeeks.org/lambda-expressions-java-8/)
-- [Information related to java sorting](https://howtodoinjava.com/java8/stream-sorted-method/)
