@@ -77,7 +77,7 @@ A students grade is calculated using the following method: <br/>
 The length of a students first name multipled by 2. 
 The students grade will then be divided by their number of credits. <br/>
 The number of credits for each student will be identified by the number of professors a student has. <br/>
-The reducer function will be utilized to add up all the credits from the list of students professors.
+The reducer function will be utilized to add up all the credits from the list of students professors.  <br/><br/>
 
 For this excercise you will first update the 'ComputeGPA' function to calculate each students GPA. 
 The formula for the total Grade is the length of a students first name multipled by 2. <br/>
