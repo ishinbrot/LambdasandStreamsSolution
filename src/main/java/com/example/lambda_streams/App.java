@@ -27,12 +27,11 @@ public final class App {
  * @param studentList
  * @return
  */
-    private  Student computeGPA(Student student) {
+    private  void computeGPA(Student student) {
             float grade = student.getFirstName().length() * 2;
             float credits = student.getProfessorList().stream().map(Professor::getCredits).reduce(0, (a, b) -> a + b);
             double gpa = grade/credits;
             student.setGPA(gpa);
-          return student;
     }
 
 /**
