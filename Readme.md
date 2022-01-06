@@ -68,20 +68,23 @@ java -jar target/classroom-tech-challenge-1.0-SNAPSHOT.jar
 You may alternatively use the built-in compilier in your specific IDE
 
 ## Overview: Introducing Java Stream Grouping and Count functionality
-In part 3 of the tech challenge we will learn how to create seperate maps of each major utilizing Java Streams.
-Java stream allows us to easily group matching elements in a list, as well as construct a new hashmap. This can be done using 1 line. <br/>
+In part 3 of the tech challenge we will learn how to create split up the students by major utilizing Java Streams. <br/>
+You will then print out all the Jon's in the student list as well as their given major. <br/>
+Java stream allows us to easily group matching elements in a list, as well as construct a new hashmap.<br/>
+Please group the names in the list in alphabetical order by first name. <br/>
+This can be done by using the streams sorted function and lambdas. <br/>
+To seperate the student List by major the groupingBy function can be used to seperate each student by Major. <br/>
 
-For the second step of the excercise we want to print out the total number of Jon's for each major. This will be done using Java stream count.
-For the last step of the excercise you will need to iterate through the new hashmap and print out the first instance of Jon for each major.
-We want to print out the students full name, and their associated major, only if they exist. If the student does not exist then we will not print anything out for each respective major
-
+For the second step of the excercise we want to print out the total number of Jon's for each major. This will be done using Java stream count method. <br/>
+For the last step of the excercise you will need to iterate through the new hashmap and print out the first instance of Jon for each major. Use the filter function to ensure you are only looping through the Jons in the list.<br/>
+We want to print out the students full name, and their associated major, only if they exist. <br/>
 Print out the students with the first name Jon. Not all of the majors have students with the first name Jon <br/>
-Be sure to perform all of the operations on one line.
+
+**If the student does not exist then we will not print anything out for each respective major**
+
 
 ## Answer Key
 
-For this excercise you will update the method determineStudentsByMajor to categorize each student by Major.
-You will then filter by each student named Jon, and grab a count of the number of students with that name. </br>
 Your output should look like the following:
 
 Major:Computer Science has 1 number of students with the first name Jon. <br/>
@@ -92,6 +95,6 @@ Major:Data Analytics with student Jon Tucker<br/>
 Major:Graphic Design has 0 number of students with the first name Jon. <br/>
 
 ## Recommended Resources
-You can reference how to use groupingBy on this page 
+You can reference how to use the groupingBy function on this page 
 https://www.baeldung.com/java-groupingby-collector
 
