@@ -12,7 +12,7 @@ Be sure to read the **README** for each part before beginning!
 | [Part 0: Getting Started](../../tree/part0)                                                    |
 | [Part 1: Introduction to  Java Stream filters and lambdas](../../tree/part1)                    |
 | [Part 2: Sort Using the Java Stream API](../../tree/part2)     |
-| [Part 3: Java Stream Grouping and Count](#part-3-Java-Stream-Grouping) |
+| [Part 3: Java Stream Grouping and Count](../../tree/part3) |
 
 
 - [Prerequisites](#Prerequisites)
